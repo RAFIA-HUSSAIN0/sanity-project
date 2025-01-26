@@ -1,3 +1,4 @@
+// app/Product/[id]/page.tsx
 
 import { client } from '@/sanity/lib/client';
 import React from 'react';
@@ -12,7 +13,7 @@ interface Product {
     category: string;
     stockLevel: number;
     discountPercentage: number;
-    imagePath: string; // Image source
+    imagePath: string;
     _type: "product";
 
     image?: {
@@ -34,7 +35,8 @@ interface PageProps {
     };
 }
 
-const page = async ({ params: { id } }: PageProps) => {
+// Using an async function inside the component to fetch data
+const ProductPage = async ({ params }: PageProps) => {
     const query = `*[_type == 'product' && id == $id]{
         name,
         price,
@@ -47,9 +49,9 @@ const page = async ({ params: { id } }: PageProps) => {
         _type
     }[0]`;
 
-    const products: Product | null = await client.fetch(query, { id });
+    const product: Product | null = await client.fetch(query, { id: params.id });
 
-    if (!products) {
+    if (!product) {
         return (
             <div>
                 <h1>Product not found</h1>
@@ -60,20 +62,12 @@ const page = async ({ params: { id } }: PageProps) => {
     return (
         <div className='max-w-7xl mx-auto px-4'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
-                <div key={products.id} className='border rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200'>
+                <div className='border rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200'>
                     {/* Product Image Section */}
-                </div>
-
-                <div className='flex gap-8 m-6'>
-                    <li className='font-bold'>Product Name: </li>
-                    <li className='font-medium'>{products.name}</li>
-                </div>
-
-                <div className='aspect-square border rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200'>
-                    {products.image && (
+                    {product.image && (
                         <Image
-                            src={urlFor(products.image).url()}
-                            alt={products.name || "Product Image"}
+                            src={urlFor(product.image).url()}
+                            alt={product.name || "Product Image"}
                             width={400}
                             height={800}
                             className='w-full h-[600px] object-cover rounded-md'
@@ -81,36 +75,40 @@ const page = async ({ params: { id } }: PageProps) => {
                     )}
                 </div>
 
-                {/* Product Details Section */}
+                <div className='flex gap-8 m-6'>
+                    <li className='font-bold'>Product Name: </li>
+                    <li className='font-medium'>{product.name}</li>
+                </div>
+
                 <div>
                     <ul className='flex gap-8 m-6'>
                         <li className='font-semibold'>Description: </li>
-                        <li className='font-medium'>{products.description}</li>
+                        <li className='font-medium'>{product.description}</li>
                     </ul>
 
                     <ul className='flex gap-8 m-6'>
                         <li className='font-semibold'>Product Price: </li>
-                        <li className='font-medium'>{products.price}</li>
+                        <li className='font-medium'>{product.price}</li>
                     </ul>
 
                     <ul className='flex gap-8 m-6'>
                         <li className='font-semibold'>Product Type: </li>
-                        <li className='font-medium'>{products._type}</li>
+                        <li className='font-medium'>{product._type}</li>
                     </ul>
 
                     <ul className='flex gap-8 m-6'>
                         <li className='font-semibold'>Product Slug: </li>
-                        <li className='font-medium'>{products.slug?.current}</li>
+                        <li className='font-medium'>{product.slug?.current}</li>
                     </ul>
 
                     <ul className='flex gap-8 m-6'>
                         <li className='font-semibold'>Product stock level: </li>
-                        <li className='font-medium'>{products.stockLevel}</li>
+                        <li className='font-medium'>{product.stockLevel}</li>
                     </ul>
 
                     <ul className='flex gap-8 m-6'>
                         <li className='font-semibold'>Category: </li>
-                        <li className='font-medium'>{products.category}</li>
+                        <li className='font-medium'>{product.category}</li>
                     </ul>
                 </div>
             </div>
@@ -118,4 +116,4 @@ const page = async ({ params: { id } }: PageProps) => {
     );
 };
 
-export default page;
+export default ProductPage;
