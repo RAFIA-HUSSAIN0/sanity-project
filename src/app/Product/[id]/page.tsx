@@ -2,15 +2,19 @@ import { client } from '@/sanity/lib/client'
 import React from 'react';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
+import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
-// Type definition for Product
+// SanityImageSource type ko import karna
+
+
+// Product type definition
 type Product = {
     id: string;
     name: string;
     price: number;
     description: string;
     category: string;
-    image: any;
+    image: SanityImageSource; // Sanity image type
     slug: string;
     stockLevel: number;
 };
