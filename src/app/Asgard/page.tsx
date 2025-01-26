@@ -9,12 +9,15 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsSuitHeart } from "react-icons/bs";
+import Header from '../components/Header';
 
 
 const page = () => {
     return (
         <div>
+            <Header />
             <div className='h-[820px] mx-[30px] '>
+
                 <div className='flex justify-center h-[730px] mx-[30px]  '>
                     <div className='flex space-x-5 mt-[20px] w-[553px] h-[500px] mx-[30px]  '>
                         <div className='w-[76px] mt-[20px] h-[416px]  '>
