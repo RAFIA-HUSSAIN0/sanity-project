@@ -1,8 +1,9 @@
-
 import { client } from '@/sanity/lib/client';
 import React from 'react';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
+import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+// Import your SanityImageSource type
 
 interface Product {
     id: string;
@@ -12,7 +13,7 @@ interface Product {
     category: string;
     stockLevel: number;
     discountPercentage: number;
-    imagePath: any; // Image source
+    imagePath: SanityImageSource;  // Use SanityImageSource instead of any
     _type: "product";
 
     image?: {

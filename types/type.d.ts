@@ -6,7 +6,7 @@ interface Product {
     category: string;
     stockLevel: number;
     discountPercentage: number;
-    imagePath: SanityImageSource;
+    imagePath: string;
     _type: "product";
 
     image?: {
