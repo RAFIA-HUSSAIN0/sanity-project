@@ -13,7 +13,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsSuitHeart } from "react-icons/bs";
 import Cart from '../components/Cart';
-import { CartContext } from '../context/CartContext';
+
 import React, { useContext } from 'react';
 
 const page = () => {

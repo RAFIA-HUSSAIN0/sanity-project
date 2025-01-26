@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { IoAlert, IoPersonOutline, IoSearchOutline } from 'react-icons/io5';
 import { FaRegHeart } from 'react-icons/fa6';

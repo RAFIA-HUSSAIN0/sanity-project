@@ -1,15 +1,11 @@
 
-import React, { useContext } from 'react';
+import React from 'react';
 import { BsBagX, BsFillXCircleFill } from 'react-icons/bs'
 import Image from 'next/image';
-import { CartContext } from '../context/CartContext';
+
 
 const Cart = () => {
-    const { showCart, setShowCart }: any = useContext(CartContext);
-    const handleClose = () => {
-        setShowCart(!showCart)
 
-    }
     return (
         <div className='cart-wrapper'>
             <div className='cart-container'>
@@ -17,7 +13,7 @@ const Cart = () => {
 
                     <div className='flex justify-between'>
                         <h1 className='font-poppins font-semibold text-[24px] leading-[36x] text-[#000000] '>Shopping cart</h1>
-                        <button className='cart-heading' onClick={handleClose}> <BsBagX className='text-[#9F9F9F] mr-[20px] hover:text-blue-500 text-[26px] ' /></button>
+                        <button className='cart-heading'> <BsBagX className='text-[#9F9F9F] mr-[20px] hover:text-blue-500 text-[26px] ' /></button>
                     </div>
                     <div className='w-[350px] h-[105px] flex gap-[20px] mt-[30px] border-t '>
                         <div className='w-[108px] h-[105px] border-[#D9D9D9] mt-[40px]  rounded-xl bg-[#f6e6b3] '> <Image src="/images/Bed.jpg" alt="Bed" width={108} height={105} />
