@@ -5,7 +5,8 @@ import { FaRegHeart } from 'react-icons/fa6';
 import { BsCart3 } from 'react-icons/bs';
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false); // Added state for menu toggle
+    const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
+
     return (
         <div>
             {/* Navigation Bar */}
@@ -20,7 +21,7 @@ const Header = () => {
                     </div>
 
                     {/* Icon Links */}
-                    <div className="hidden sm:hidden md:flex lg:flex space-x-4 lg:space-x-[60px] text-xl absolute right-16 mr-[50px]">
+                    <div className="hidden md:flex space-x-4 text-xl absolute right-16 mr-[50px]">
                         <Link href="/Account">
                             <span className="flex items-center">
                                 <IoPersonOutline className="hover:text-blue-500 cursor-pointer" />
@@ -36,9 +37,6 @@ const Header = () => {
                 </div>
             </nav>
 
-
-
-
             {/* Mobile Navigation Menu */}
             {menuOpen && (
                 <div className="w-full lg:hidden bg-[#FFFFFF] flex flex-col items-center space-y-4 py-4">
@@ -48,9 +46,8 @@ const Header = () => {
                     <Link href="/Contact" className="hover:text-blue-500">Contact</Link>
                 </div>
             )}
-
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;
