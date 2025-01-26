@@ -1,3 +1,4 @@
+
 import { client } from '@/sanity/lib/client';
 import React from 'react';
 import Image from 'next/image';
@@ -11,7 +12,7 @@ interface Product {
     category: string;
     stockLevel: number;
     discountPercentage: number;
-    imagePath: any; // Image source
+    imagePath: string; // Image source
     _type: "product";
 
     image?: {
@@ -27,7 +28,6 @@ interface Product {
     };
 }
 
-// Define PageProps without requiring params to be a Promise
 interface PageProps {
     params: {
         id: string;
