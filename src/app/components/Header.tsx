@@ -5,7 +5,6 @@ import { FaRegHeart } from 'react-icons/fa6';
 import { BsCart3 } from 'react-icons/bs';
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
 
     return (
         <div>
@@ -38,7 +37,7 @@ const Header = () => {
             </nav>
 
             {/* Mobile Navigation Menu */}
-            {menuOpen && (
+            {(
                 <div className="w-full lg:hidden bg-[#FFFFFF] flex flex-col items-center space-y-4 py-4">
                     <Link href="/" className="hover:text-blue-500">Home</Link>
                     <Link href="/Shop" className="hover:text-blue-500">Shop</Link>
