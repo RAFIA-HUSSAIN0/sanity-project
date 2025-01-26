@@ -1,11 +1,8 @@
 "use client"
 
-import { BsCart3 } from 'react-icons/bs';
+
 import Link from 'next/link';
-import { FaRegHeart } from 'react-icons/fa6';
-import { IoSearchOutline, IoPersonOutline, IoAlert } from 'react-icons/io5';
 import Image from 'next/image';
-import { SlArrowRight } from "react-icons/sl";
 import { FaStarHalf } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
