@@ -1,5 +1,3 @@
-import { json } from 'stream/consumers';
-import { product } from '../../sanity/schemaTypes/product';
 
 
 
