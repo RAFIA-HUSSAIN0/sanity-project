@@ -50,6 +50,7 @@ const AddToCartPage = () => {
         return cartItems.reduce((total, item) => total + item.price * item.inventory, 0);
     };
 
+
     const handleProceed = () => {
         Swal.fire({
             title: "Proceed to Checkout?",

@@ -8,10 +8,6 @@ import ProductListing from '../components/ProductListing';
 import Image from 'next/image';
 import Filter from '../components/Filter';
 import Payment from '../components/Payment';
-import { product } from '../../sanity/schemaTypes/product';
-import { addToCart } from '../actions/actions';
-
-
 
 
 
