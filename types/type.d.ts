@@ -8,6 +8,7 @@ interface Product {
     discountPercentage: number;
     imagePath: string;
     _type: "product";
+    inventory: number;
 
     image?: {
         asset: {
@@ -20,6 +21,7 @@ interface Product {
         _type: "slug";
         current: string;
     };
+
 }
 
 

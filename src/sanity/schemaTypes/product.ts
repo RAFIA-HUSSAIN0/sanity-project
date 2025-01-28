@@ -55,7 +55,7 @@ export const product = {
         {
             name: 'inventory',
             title: 'Inventory',
-            type: 'string',
+            type: 'number',
         },
         {
             name: 'stockLevel',

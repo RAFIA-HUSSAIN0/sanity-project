@@ -55,11 +55,6 @@ const Hero = () => {
 
 
 
-
-
-
-
-
             {/* Product Section */}
             <section className="bg-[#FAF4F4] grid grid-cols-1 sm:grid-cols-2 gap-8 p-8">
                 {/* Product 1 */}
