@@ -36,8 +36,7 @@ interface PageProps {
     };
 }
 
-// Using an async function inside the component to fetch data
-const ProductPage = async ({ params }: PageProps) => {
+export default async function ProductPage({ params }: PageProps) {
     const query = `*[_type == 'product' && id == $id]{
         name,
         price,
@@ -67,7 +66,7 @@ const ProductPage = async ({ params }: PageProps) => {
                     {/* Product Image Section */}
                     {product.image && (
                         <Image
-                            src={urlFor(product.image).url()}
+                            src={urlFor(product.image).url() || "/placeholder.svg"}
                             alt={product.name || "Product Image"}
                             width={400}
                             height={800}
@@ -76,45 +75,39 @@ const ProductPage = async ({ params }: PageProps) => {
                     )}
                 </div>
 
-                <div className='flex gap-8 m-6'>
-                    <li className='font-bold'>Product Name: </li>
-                    <li className='font-medium'>{product.name}</li>
-                </div>
-
                 <div>
-                    <ul className='flex gap-8 m-6'>
-                        <li className='font-semibold'>Description: </li>
-                        <li className='font-medium'>{product.description}</li>
-                    </ul>
-
-                    <ul className='flex gap-8 m-6'>
-                        <li className='font-semibold'>Product Price: </li>
-                        <li className='font-medium'>{product.price}</li>
-                    </ul>
-
-                    <ul className='flex gap-8 m-6'>
-                        <li className='font-semibold'>Product Type: </li>
-                        <li className='font-medium'>{product._type}</li>
-                    </ul>
-
-                    <ul className='flex gap-8 m-6'>
-                        <li className='font-semibold'>Product Slug: </li>
-                        <li className='font-medium'>{product.slug?.current}</li>
-                    </ul>
-
-                    <ul className='flex gap-8 m-6'>
-                        <li className='font-semibold'>Product stock level: </li>
-                        <li className='font-medium'>{product.stockLevel}</li>
-                    </ul>
-
-                    <ul className='flex gap-8 m-6'>
-                        <li className='font-semibold'>Category: </li>
-                        <li className='font-medium'>{product.category}</li>
+                    <ul className='space-y-4'>
+                        <li className='flex gap-4'>
+                            <span className='font-bold'>Product Name:</span>
+                            <span className='font-medium'>{product.name}</span>
+                        </li>
+                        <li className='flex gap-4'>
+                            <span className='font-semibold'>Description:</span>
+                            <span className='font-medium'>{product.description}</span>
+                        </li>
+                        <li className='flex gap-4'>
+                            <span className='font-semibold'>Product Price:</span>
+                            <span className='font-medium'>{product.price}</span>
+                        </li>
+                        <li className='flex gap-4'>
+                            <span className='font-semibold'>Product Type:</span>
+                            <span className='font-medium'>{product._type}</span>
+                        </li>
+                        <li className='flex gap-4'>
+                            <span className='font-semibold'>Product Slug:</span>
+                            <span className='font-medium'>{product.slug?.current}</span>
+                        </li>
+                        <li className='flex gap-4'>
+                            <span className='font-semibold'>Product stock level:</span>
+                            <span className='font-medium'>{product.stockLevel}</span>
+                        </li>
+                        <li className='flex gap-4'>
+                            <span className='font-semibold'>Category:</span>
+                            <span className='font-medium'>{product.category}</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     );
-};
-
-export default ProductPage;
+}
