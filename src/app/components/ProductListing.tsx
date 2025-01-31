@@ -21,23 +21,13 @@ const ProductListing = ({ product }: { product: Product }) => {
         })
 
         addToCart(product)
-
     }
-
-
     return (
         <div>
-
-
-
             <div className=' max-w-8xl mx-auto px-14 py-6' >
-
-
                 <div
                     className='flex flex-col items-center border rounded-lg shadow-md p-4 hover:shadow-lg transition duration-200 '
                 >
-
-
                     <Link href={`/Product/${product.id}`}>
                         {product.image && (
                             <Image
@@ -58,19 +48,10 @@ const ProductListing = ({ product }: { product: Product }) => {
                             className='bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg 
                         hover:scale-110 transition-transform duration-200 ease-in-out  '
                             onClick={(e) => handleAddToCart(e, product)}>add To Cart</button>
-
-
-
                     </Link>
                 </div>
 
-
             </div>
-
-
-
-
-
 
         </div>
     )

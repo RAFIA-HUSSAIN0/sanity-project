@@ -3,7 +3,6 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { FaRegHeart } from 'react-icons/fa6';
 import { IoSearchOutline, IoPersonOutline, IoAlert } from 'react-icons/io5';
 import { BsCart3 } from 'react-icons/bs';
-
 import { FaLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
 

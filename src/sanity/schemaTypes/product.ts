@@ -42,7 +42,12 @@ export const product = {
         {
             name: 'category',
             title: 'Category',
-            type: 'string',
+            type: 'reference',
+            to: [
+                {
+                    type: "category"
+                }
+            ]
         },
         {
             name: 'slug',
@@ -51,11 +56,6 @@ export const product = {
             options: {
                 source: 'name',  // Slug will now be based on the "name" field
             },
-        },
-        {
-            name: 'inventory',
-            title: 'Inventory',
-            type: 'number',
         },
         {
             name: 'stockLevel',

@@ -1,10 +1,11 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { getCartItems, removeFromCart, updateCartQuantity } from "../actions/actions";
 import Swal from "sweetalert2";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
+
 
 const AddToCartPage = () => {
     const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -49,6 +50,7 @@ const AddToCartPage = () => {
     const calculatedTotal = () => {
         return cartItems.reduce((total, item) => total + item.price * item.inventory, 0);
     };
+    const router = useRouter();
 
 
     const handleProceed = () => {
@@ -63,6 +65,9 @@ const AddToCartPage = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire("Success", "Your order has been successfully processed", "success");
+
+                router.push("/Checkout")
+
                 setCartItems([]);
             }
         });
@@ -137,4 +142,4 @@ const AddToCartPage = () => {
     );
 };
 
-export default AddToCartPage;
+export default AddToCartPage;  

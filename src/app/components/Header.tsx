@@ -29,7 +29,7 @@ const Header = () => {
                         </Link>
                         <IoSearchOutline className="hover:text-blue-500 cursor-pointer" />
                         <FaRegHeart className="hover:text-blue-500 cursor-pointer" />
-                        <Link href="/Asgard">
+                        <Link href="/cart">
                             <BsCart3 className="hover:text-blue-500 cursor-pointer" />
                         </Link>
                     </div>
