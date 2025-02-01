@@ -1,35 +1,8 @@
-import { client } from "@/sanity/lib/client"
-import Image from "next/image"
-import { urlFor } from "@/sanity/lib/image"
+import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
+import Image from "next/image";
 
-interface Product {
-    id: string
-    name: string
-    price: number
-    description?: string
-    category: string
-    stockLevel: number
-    discountPercentage: number
-    imagePath: string
-    _type: "product"
-    image?: {
-        asset: {
-            _ref: string
-            _type: "image"
-        }
-    }
-    slug: {
-        _type: "slug"
-        current: string
-    }
-    inventory: number
-}
-
-type PageProps = {
-    params: { id: string }
-}
-
-export default async function ProductPage({ params }: PageProps) {
+export default async function ProductPage({ params }: { params: { id: string } }) {
     const query = `*[_type == 'product' && id == $id]{
         name,
         price,
@@ -40,16 +13,12 @@ export default async function ProductPage({ params }: PageProps) {
         stockLevel,
         discountPercentage,
         _type
-    }[0]`
+    }[0]`;
 
-    const product: Product | null = await client.fetch(query, { id: params.id })
+    const product: Product | null = await client.fetch(query, { id: params.id });
 
     if (!product) {
-        return (
-            <div>
-                <h1>Product not found</h1>
-            </div>
-        )
+        return <h1>Product not found</h1>;
     }
 
     return (
@@ -81,18 +50,6 @@ export default async function ProductPage({ params }: PageProps) {
                             <span className="font-medium">{product.price}</span>
                         </li>
                         <li className="flex gap-4">
-                            <span className="font-semibold">Product Type:</span>
-                            <span className="font-medium">{product._type}</span>
-                        </li>
-                        <li className="flex gap-4">
-                            <span className="font-semibold">Product Slug:</span>
-                            <span className="font-medium">{product.slug?.current}</span>
-                        </li>
-                        <li className="flex gap-4">
-                            <span className="font-semibold">Product stock level:</span>
-                            <span className="font-medium">{product.stockLevel}</span>
-                        </li>
-                        <li className="flex gap-4">
                             <span className="font-semibold">Category:</span>
                             <span className="font-medium">{product.category}</span>
                         </li>
@@ -100,6 +57,5 @@ export default async function ProductPage({ params }: PageProps) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-
