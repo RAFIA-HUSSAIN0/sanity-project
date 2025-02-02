@@ -8,6 +8,9 @@ export default async function ProductPage({ params }: { params: { id: string } }
         return notFound();
     }
 
+
+
+
     const query = `*[_type == 'product' && id == $id]{
         name,
         price,

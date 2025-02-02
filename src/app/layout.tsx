@@ -1,3 +1,10 @@
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
@@ -27,6 +34,14 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={poppins.className}>
+
+
+
+
+
+
+
+
         {/* Navbar Component */}
 
         <div> {children}</div>
@@ -36,6 +51,7 @@ export default function RootLayout({
 
         {/* Footer Component */}
         <Footer />
+
       </body>
     </html>
   );

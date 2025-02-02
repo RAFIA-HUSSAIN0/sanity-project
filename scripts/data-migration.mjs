@@ -39,7 +39,7 @@ async function importData() {
     console.log('Migrating data, please wait...');
 
     // Fetch products from the API
-    const response = await axios.get('https://template-0-beta.vercel.app/api/product');
+    const response = await axios.get;
     const products = response.data;
 
     console.log('Products fetched:', products);
