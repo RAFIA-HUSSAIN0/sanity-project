@@ -1,0 +1,770 @@
+{
+    "knownSymbols": {
+        "SanityImageSource": [
+            {
+                "name": "SanityImageSource",
+                "module": "@sanity/image-url/lib/types/types",
+                "isDefault": false
+            },
+            {
+                "name": "SanityImageSource",
+                "path": "c:\\myprojectcopy\\types\\sanityImageSource.ts",
+                "type": "type",
+                "isDefault": false
+            }
+        ],
+        "config": [
+            {
+                "name": "config",
+                "path": "c:\\myprojectcopy\\src\\middlewere.ts",
+                "type": "const",
+                "isDefault": true
+            }
+        ],
+        "Poppins": [
+            {
+                "name": "Poppins",
+                "module": "next/font/google",
+                "isDefault": false
+            }
+        ],
+        "type { Config": [
+            {
+                "name": "type { Config",
+                "module": "tailwindcss",
+                "isDefault": true
+            }
+        ],
+        "structure": [
+            {
+                "name": "structure",
+                "path": "c:\\myprojectcopy\\src\\sanity\\structure.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "type {StructureResolver": [
+            {
+                "name": "type {StructureResolver",
+                "module": "sanity/structure",
+                "isDefault": true
+            }
+        ],
+        "product": [
+            {
+                "name": "product",
+                "path": "c:\\myprojectcopy\\src\\sanity\\schemaTypes\\product.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "default": [
+            {
+                "name": "default",
+                "path": "c:\\myprojectcopy\\src\\sanity\\schemaTypes\\order.ts",
+                "isDefault": false
+            }
+        ],
+        "title": [
+            {
+                "name": "title",
+                "module": "process",
+                "isDefault": false
+            }
+        ],
+        "type SchemaTypeDefinition": [
+            {
+                "name": "type SchemaTypeDefinition",
+                "module": "sanity",
+                "isDefault": false
+            }
+        ],
+        "defineField": [
+            {
+                "name": "defineField",
+                "module": "sanity",
+                "isDefault": false
+            }
+        ],
+        "defineType": [
+            {
+                "name": "defineType",
+                "module": "sanity",
+                "isDefault": false
+            }
+        ],
+        "allProducts": [
+            {
+                "name": "allProducts",
+                "module": "@/sanity/lib/queries",
+                "isDefault": false
+            },
+            {
+                "name": "allProducts",
+                "path": "c:\\myprojectcopy\\src\\sanity\\lib\\queries.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "four": [
+            {
+                "name": "four",
+                "module": "@/sanity/lib/queries",
+                "isDefault": false
+            },
+            {
+                "name": "four",
+                "path": "c:\\myprojectcopy\\src\\sanity\\lib\\queries.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "groq": [
+            {
+                "name": "groq",
+                "module": "next-sanity",
+                "isDefault": false
+            }
+        ],
+        "const": [
+            {
+                "name": "const",
+                "path": "c:\\myprojectcopy\\src\\sanity\\lib\\live.ts",
+                "isDefault": false
+            }
+        ],
+        "defineLive": [
+            {
+                "name": "defineLive",
+                "module": "next-sanity",
+                "isDefault": false
+            }
+        ],
+        "urlFor": [
+            {
+                "name": "urlFor",
+                "module": "@/sanity/lib/image",
+                "isDefault": false
+            },
+            {
+                "name": "urlFor",
+                "path": "c:\\myprojectcopy\\src\\sanity\\lib\\image.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "createImageUrlBuilder": [
+            {
+                "name": "createImageUrlBuilder",
+                "module": "@sanity/image-url",
+                "isDefault": true
+            }
+        ],
+        "type { Image": [
+            {
+                "name": "type { Image",
+                "module": "sanity",
+                "isDefault": true
+            }
+        ],
+        "client": [
+            {
+                "name": "client",
+                "module": "@/sanity/lib/client",
+                "isDefault": false
+            },
+            {
+                "name": "client",
+                "path": "c:\\myprojectcopy\\src\\sanity\\lib\\client.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "createClient": [
+            {
+                "name": "createClient",
+                "module": "next-sanity",
+                "isDefault": false
+            }
+        ],
+        "apiVersion": [
+            {
+                "name": "apiVersion",
+                "path": "c:\\myprojectcopy\\src\\sanity\\env.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "dataset": [
+            {
+                "name": "dataset",
+                "path": "c:\\myprojectcopy\\src\\sanity\\env.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "projectId": [
+            {
+                "name": "projectId",
+                "path": "c:\\myprojectcopy\\src\\sanity\\env.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "token": [
+            {
+                "name": "token",
+                "path": "c:\\myprojectcopy\\src\\sanity\\env.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "error": [
+            {
+                "name": "error",
+                "module": "console",
+                "isDefault": false
+            }
+        ],
+        "clerkMiddleware": [
+            {
+                "name": "clerkMiddleware",
+                "module": "@clerk/nextjs/server",
+                "isDefault": false
+            },
+            {
+                "name": "clerkMiddleware",
+                "path": "c:\\myprojectcopy\\src\\middlewere.ts",
+                "isDefault": true
+            }
+        ],
+        "dynamic": [
+            {
+                "name": "dynamic",
+                "path": "c:\\myprojectcopy\\src\\app\\studio\\[[...tool]]\\page.tsx",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "StudioPage": [
+            {
+                "name": "StudioPage",
+                "path": "c:\\myprojectcopy\\src\\app\\studio\\[[...tool]]\\page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "NextStudio": [
+            {
+                "name": "NextStudio",
+                "module": "next-sanity/studio",
+                "isDefault": false
+            }
+        ],
+        "Shop": [
+            {
+                "name": "Shop",
+                "path": "c:\\myprojectcopy\\src\\app\\Shop\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "React": [
+            {
+                "name": "React",
+                "module": "react",
+                "isDefault": true
+            }
+        ],
+        "{ useEffect": [
+            {
+                "name": "{ useEffect",
+                "module": "react",
+                "isDefault": true
+            }
+        ],
+        "useState": [
+            {
+                "name": "useState",
+                "module": "react",
+                "isDefault": true
+            }
+        ],
+        "Image": [
+            {
+                "name": "Image",
+                "module": "next/image",
+                "isDefault": true
+            }
+        ],
+        "notFound": [
+            {
+                "name": "notFound",
+                "module": "next/navigation",
+                "isDefault": false
+            }
+        ],
+        "Home": [
+            {
+                "name": "Home",
+                "path": "c:\\myprojectcopy\\src\\app\\page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "metadata": [
+            {
+                "name": "metadata",
+                "path": "c:\\myprojectcopy\\src\\app\\layout.tsx",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "RootLayout": [
+            {
+                "name": "RootLayout",
+                "path": "c:\\myprojectcopy\\src\\app\\layout.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "type { Metadata": [
+            {
+                "name": "type { Metadata",
+                "module": "next",
+                "isDefault": true
+            }
+        ],
+        "Contact": [
+            {
+                "name": "Contact",
+                "path": "c:\\myprojectcopy\\src\\app\\Contact\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "FaPhoneAlt": [
+            {
+                "name": "FaPhoneAlt",
+                "module": "react-icons/fa",
+                "isDefault": false
+            }
+        ],
+        "FaRegHeart": [
+            {
+                "name": "FaRegHeart",
+                "module": "react-icons/fa6",
+                "isDefault": false
+            }
+        ],
+        "IoSearchOutline": [
+            {
+                "name": "IoSearchOutline",
+                "module": "react-icons/io5",
+                "isDefault": false
+            }
+        ],
+        "IoPersonOutline": [
+            {
+                "name": "IoPersonOutline",
+                "module": "react-icons/io5",
+                "isDefault": false
+            }
+        ],
+        "IoAlert": [
+            {
+                "name": "IoAlert",
+                "module": "react-icons/io5",
+                "isDefault": false
+            }
+        ],
+        "BsCart3": [
+            {
+                "name": "BsCart3",
+                "module": "react-icons/bs",
+                "isDefault": false
+            }
+        ],
+        "FaLocationDot": [
+            {
+                "name": "FaLocationDot",
+                "module": "react-icons/fa6",
+                "isDefault": false
+            }
+        ],
+        "GoClockFill": [
+            {
+                "name": "GoClockFill",
+                "module": "react-icons/go",
+                "isDefault": false
+            }
+        ],
+        "Link": [
+            {
+                "name": "Link",
+                "module": "next/link",
+                "isDefault": true
+            }
+        ],
+        "SearchAndFilter": [
+            {
+                "name": "SearchAndFilter",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\SearchAndFilter.tsx",
+                "isDefault": true
+            }
+        ],
+        "{ useState": [
+            {
+                "name": "{ useState",
+                "module": "react",
+                "isDefault": true
+            }
+        ],
+        "ProductListing": [
+            {
+                "name": "ProductListing",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\ProductListing.tsx",
+                "isDefault": true
+            }
+        ],
+        "Swal": [
+            {
+                "name": "Swal",
+                "module": "sweetalert2",
+                "isDefault": true
+            }
+        ],
+        "Payment": [
+            {
+                "name": "Payment",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\Payment.tsx",
+                "isDefault": true
+            }
+        ],
+        "Account": [
+            {
+                "name": "Account",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "SlArrowRight": [
+            {
+                "name": "SlArrowRight",
+                "module": "react-icons/sl",
+                "isDefault": false
+            }
+        ],
+        "Navbar": [
+            {
+                "name": "Navbar",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\Navbar.tsx",
+                "isDefault": true
+            }
+        ],
+        "Hero": [
+            {
+                "name": "Hero",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\Hero.tsx",
+                "isDefault": true
+            }
+        ],
+        "MdOutlineWatchLater": [
+            {
+                "name": "MdOutlineWatchLater",
+                "module": "react-icons/md",
+                "isDefault": false
+            }
+        ],
+        "HiMiniCalendar": [
+            {
+                "name": "HiMiniCalendar",
+                "module": "react-icons/hi2",
+                "isDefault": false
+            }
+        ],
+        "Header": [
+            {
+                "name": "Header",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\Header.tsx",
+                "isDefault": true
+            }
+        ],
+        "Footer": [
+            {
+                "name": "Footer",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\Footer.tsx",
+                "isDefault": true
+            }
+        ],
+        "Filter": [
+            {
+                "name": "Filter",
+                "path": "c:\\myprojectcopy\\src\\app\\components\\Filter.tsx",
+                "isDefault": true
+            }
+        ],
+        "HiAdjustmentsHorizontal": [
+            {
+                "name": "HiAdjustmentsHorizontal",
+                "module": "react-icons/hi2",
+                "isDefault": false
+            }
+        ],
+        "HiMiniSquares2X2": [
+            {
+                "name": "HiMiniSquares2X2",
+                "module": "react-icons/hi2",
+                "isDefault": false
+            }
+        ],
+        "BsViewList": [
+            {
+                "name": "BsViewList",
+                "module": "react-icons/bs",
+                "isDefault": false
+            }
+        ],
+        "Cart": [
+            {
+                "name": "Cart",
+                "path": "c:\\myprojectcopy\\src\\app\\Carte\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "BsBagX": [
+            {
+                "name": "BsBagX",
+                "module": "react-icons/bs",
+                "isDefault": false
+            }
+        ],
+        "BsFillXCircleFill": [
+            {
+                "name": "BsFillXCircleFill",
+                "module": "react-icons/bs",
+                "isDefault": false
+            }
+        ],
+        "CheckOut": [
+            {
+                "name": "CheckOut",
+                "path": "c:\\myprojectcopy\\src\\app\\Checkout\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "CgChevronRight": [
+            {
+                "name": "CgChevronRight",
+                "module": "react-icons/cg",
+                "isDefault": false
+            }
+        ],
+        "Result": [
+            {
+                "name": "Result",
+                "module": "postcss",
+                "isDefault": false
+            }
+        ],
+        "AddToCartPage": [
+            {
+                "name": "AddToCartPage",
+                "path": "c:\\myprojectcopy\\src\\app\\cart\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "useRouter": [
+            {
+                "name": "useRouter",
+                "module": "next/navigation",
+                "isDefault": false
+            }
+        ],
+        "page": [
+            {
+                "name": "page",
+                "path": "c:\\myprojectcopy\\src\\app\\Asgard\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "FaStarHalf": [
+            {
+                "name": "FaStarHalf",
+                "module": "react-icons/fa",
+                "isDefault": false
+            }
+        ],
+        "FaStar": [
+            {
+                "name": "FaStar",
+                "module": "react-icons/fa6",
+                "isDefault": false
+            }
+        ],
+        "FaFacebook": [
+            {
+                "name": "FaFacebook",
+                "module": "react-icons/fa",
+                "isDefault": false
+            }
+        ],
+        "FaLinkedin": [
+            {
+                "name": "FaLinkedin",
+                "module": "react-icons/fa",
+                "isDefault": false
+            }
+        ],
+        "AiFillTwitterCircle": [
+            {
+                "name": "AiFillTwitterCircle",
+                "module": "react-icons/ai",
+                "isDefault": false
+            }
+        ],
+        "BsSuitHeart": [
+            {
+                "name": "BsSuitHeart",
+                "module": "react-icons/bs",
+                "isDefault": false
+            }
+        ],
+        "addToCart": [
+            {
+                "name": "addToCart",
+                "path": "c:\\myprojectcopy\\src\\app\\actions\\actions.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "removeFromCart": [
+            {
+                "name": "removeFromCart",
+                "path": "c:\\myprojectcopy\\src\\app\\actions\\actions.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "updateCartQuantity": [
+            {
+                "name": "updateCartQuantity",
+                "path": "c:\\myprojectcopy\\src\\app\\actions\\actions.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "getCartItems": [
+            {
+                "name": "getCartItems",
+                "path": "c:\\myprojectcopy\\src\\app\\actions\\actions.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "About": [
+            {
+                "name": "About",
+                "path": "c:\\myprojectcopy\\src\\app\\About\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "defineConfig": [
+            {
+                "name": "defineConfig",
+                "module": "sanity",
+                "isDefault": false
+            },
+            {
+                "name": "defineConfig",
+                "path": "c:\\myprojectcopy\\sanity.config.ts",
+                "isDefault": true
+            }
+        ],
+        "visionTool": [
+            {
+                "name": "visionTool",
+                "module": "@sanity/vision",
+                "isDefault": false
+            }
+        ],
+        "structureTool": [
+            {
+                "name": "structureTool",
+                "module": "sanity/structure",
+                "isDefault": false
+            }
+        ],
+        "defineCliConfig": [
+            {
+                "name": "defineCliConfig",
+                "module": "sanity/cli",
+                "isDefault": false
+            },
+            {
+                "name": "defineCliConfig",
+                "path": "c:\\myprojectcopy\\sanity.cli.ts",
+                "isDefault": true
+            }
+        ],
+        "unstable_cacheLife": [
+            {
+                "name": "unstable_cacheLife",
+                "path": "c:\\myprojectcopy\\.next\\types\\cache-life.d.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "PageProps": [
+            {
+                "name": "PageProps",
+                "path": "c:\\myprojectcopy\\.next\\types\\app\\About\\page.ts",
+                "type": "interface",
+                "isDefault": false
+            }
+        ],
+        "LayoutProps": [
+            {
+                "name": "LayoutProps",
+                "path": "c:\\myprojectcopy\\.next\\types\\app\\About\\page.ts",
+                "type": "interface",
+                "isDefault": false
+            }
+        ],
+        "type { ResolvingMetadata": [
+            {
+                "name": "type { ResolvingMetadata",
+                "module": "next/dist/lib/metadata/types/metadata-interface.js",
+                "isDefault": true
+            }
+        ],
+        "ResolvingViewport": [
+            {
+                "name": "ResolvingViewport",
+                "module": "next/dist/lib/metadata/types/metadata-interface.js",
+                "isDefault": true
+            }
+        ],
+        "category": [
+            {
+                "name": "category",
+                "path": "c:\\myprojectcopy\\src\\sanity\\schemaTypes\\category.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "async": [
+            {
+                "name": "async",
+                "path": "c:\\myprojectcopy\\src\\app\\Product\\[id]\\page.tsx",
+                "isDefault": true
+            }
+        ],
+        "schema": [
+            {
+                "name": "schema",
+                "path": "c:\\myprojectcopy\\src\\sanity\\schemaTypes\\index.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ]
+    }
+}
