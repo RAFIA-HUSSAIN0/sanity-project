@@ -1,6 +1,6 @@
 import { type SchemaTypeDefinition } from 'sanity'
 import { product } from './product'
-import { category } from '../../app/Contact/category'
+import { category } from './category'
 import order from './order'
 
 

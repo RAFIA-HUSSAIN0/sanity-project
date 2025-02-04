@@ -3,13 +3,16 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
-    if (!params || !params.id) {
+export default async function ProductPage({
+    params,
+}: {
+    params: Promise<{ id: string }>;
+}) {
+    const { id } = await params;
+
+    if (!id) {
         return notFound();
     }
-
-
-
 
     const query = `*[_type == 'product' && id == $id]{
         name,
@@ -24,7 +27,7 @@ export default async function ProductPage({ params }: { params: { id: string } }
     }[0]`;
 
     try {
-        const product: Product | null = await client.fetch(query, { id: params.id });
+        const product: Product | null = await client.fetch(query, { id });
 
         if (!product) {
             return <h1>Product not found</h1>;
